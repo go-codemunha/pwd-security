@@ -1,7 +1,6 @@
 package validator
 
 import (
-	"fmt"
 	"unicode"
 )
 
@@ -29,34 +28,18 @@ func Password(s string) bool {
 	for _, r := range s {
 		switch {
 		case unicode.IsUpper(r):
-			{
-				hasUppercase = true
-				fmt.Printf("IsUpper %t : %q\n", hasUppercase, r)
-			}
+			hasUppercase = true
 		case unicode.IsLower(r):
-			{
-				hasLowercase = true
-				fmt.Printf("IsLower %t : %q\n", hasLowercase, r)
-			}
+			hasLowercase = true
 		case unicode.IsNumber(r):
-			{
-				hasNumber = true
-				fmt.Printf("IsNumber %t : %q\n", hasNumber, r)
-			}
+			hasNumber = true
 		case unicode.IsSpace(r):
-			{
-				hasSpace = false
-				fmt.Printf("IsSpace %t : %q\n", hasSpace, r)
-			}
+			hasSpace = false
 		case !unicode.IsSymbol(r):
-			{
-				hasSymbol = true
-				fmt.Printf("IsSymbol %t : %q\n", hasSymbol, r)
-			}
+			hasSymbol = true
 		default:
 		}
 
 	}
-	// fmt.Println(len(s), hasLowercase, hasUppercase, hasNumber, hasSpace, hasSymbol)
 	return hasLowercase && hasUppercase && hasNumber && hasSpace && hasSymbol
 }
