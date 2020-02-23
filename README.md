@@ -20,7 +20,7 @@ go test -v ./...
 ## resule test
 
 ```go
-?       github.com/chalermporn/pwd-security     [no test files]
+?       github.com/go-codemunha/pwd-security     [no test files]
 === RUN   TestPasswordOriginal
 === RUN   TestPasswordOriginal/FooBar123!
 === RUN   TestPasswordOriginal/foobar
@@ -32,6 +32,6 @@ go test -v ./...
     --- PASS: TestPasswordOriginal/foobar123 (0.00s)
     --- PASS: TestPasswordOriginal/@ (0.00s)
 PASS
-ok      github.com/chalermporn/pwd-security/validator   0.687s
+ok      github.com/go-codemunha/pwd-security/validator   0.687s
 
 ```
