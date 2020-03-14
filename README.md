@@ -11,13 +11,14 @@ marp: true
 ### github: [pwd-security](https://github.com/go-codemunha/pwd-security)
 
 ---
+
 ## Run go test
 
 ```go
 go test -v ./...
 ```
 
-## resule test
+## result test
 
 ```go
 ?       github.com/go-codemunha/pwd-security     [no test files]

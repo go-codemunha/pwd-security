@@ -13,7 +13,7 @@ func Password(s string) bool {
 	}
 	var hasUppercase = false
 	var hasLowercase = false
-	var hasSpace = true
+	var isSpace = true
 	var hasSymbol = false
 	var hasNumber = false
 	for _, r := range s {
@@ -25,12 +25,12 @@ func Password(s string) bool {
 		case unicode.IsNumber(r):
 			hasNumber = true
 		case unicode.IsSpace(r):
-			hasSpace = false
+			isSpace = false
 		case !unicode.IsSymbol(r):
 			hasSymbol = true
 		default:
 		}
 
 	}
-	return hasLowercase && hasUppercase && hasNumber && hasSpace && hasSymbol
+	return hasLowercase && hasUppercase && hasNumber && isSpace && hasSymbol
 }

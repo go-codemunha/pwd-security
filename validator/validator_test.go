@@ -41,4 +41,13 @@ func TestPasswordOriginal(t *testing.T) {
 		}
 
 	})
+	t.Run("@@@@@@@2wS@", func(t *testing.T) {
+		given := "@@@@@@@2wS@ "
+		want := false
+		get := Password(given)
+		if want != get {
+			t.Errorf("given %q want %t but get %t", given, want, get)
+		}
+
+	})
 }
