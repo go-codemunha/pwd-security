@@ -10,6 +10,8 @@ marp: true
 
 ### github: [pwd-security](https://github.com/go-codemunha/pwd-security)
 
+![Go](https://github.com/go-codemunha/pwd-security/workflows/Go/badge.svg)
+
 ---
 
 ## Source Code : validator.go
