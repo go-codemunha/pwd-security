@@ -84,3 +84,6 @@ PASS
 ok      github.com/go-codemunha/pwd-security/validator   0.687s
 
 ```
+
+### update policy  หน่อยนะครับ
+``` go run main.go ```
